@@ -1,79 +1,88 @@
-
 🎵 Spotify Clone Database Project
 
-A personal SQL project simulating the core of Spotify’s music data ecosystem using MySQL. Designed to showcase real-world relational database skills and SQL query writing — from basic data retrieval to advanced CTEs and analytical insights.
+Welcome to my Spotify Clone SQL Database project!This project simulates the backend structure of a music streaming service like Spotify.It was built as part of my self-learning journey towards becoming a professional Database Administrator (DBA).
 
----
+📌 Overview
 
-📌 Project Objective
-To build a simplified version of Spotify’s backend using SQL, focused on **users**, **playlists**, **songs**, **albums**, and **artists**, while practicing:
-- Relational data modeling
-- SQL querying (basic to advanced)
-- Joins, aggregations, filtering
-- Common Table Expressions (CTEs)
-- Realistic dataset simulation
+This SQL project includes a fully structured relational database that mimics the functionality of a music streaming platform.It supports data about users, artists, albums, songs, genres, playlists, and listening activity.
 
----
+💾 Database Structure
 
-🧱 Database Schema
+The database includes the following tables:
 
-**Tables Created:**
-- `users`
-- `playlists`
-- `songs`
-- `albums`
-- `artists`
-- `playlistSongs`
+Users – Stores listener info
 
-All tables are connected via foreign keys to reflect realistic relationships:
-- A **user** can create many **playlists**
-- A **playlist** can contain many **songs**
-- A **song** belongs to an **album**
-- An **album** is made by an **artist**
-- Each **artist** is assigned a **genre**
+Artists – Contains details about music artists
 
----
+Albums – Albums released by artists
 
-📊 Sample SQL Queries Included
+Songs – Tracks belonging to albums and genres
 
-✅ Basic Queries
-1. **List all artists in the 'Jazz' genre** with their album count.
-2. **Find the longest song** by duration.
-3. **Show playlists created in 2023** with their song counts.
+Genres – Classifications like Afrobeats, Hip-Hop, etc.
 
-🧐 Intermediate Analysis
-4. Find the **artist with the most albums**.
-5. **Average song duration per genre**.
-6. **Users with playlists** containing songs from **more than 3 genres**.
-7. **Albums without songs** (Left Join practice).
+Playlists – Created by users, contains multiple songs
 
-🩻 Advanced Joins / Logic
-8. Display **User → Playlist → Songs** in a **hierarchical format** using **CTEs**.
-9. **Songs in more than 5 playlists** (popularity analysis).
-10. **Artists whose albums** only contain **songs shorter than 4 minutes**.
+PlaylistTracks – Tracks within each playlist
 
----
+ListeningHistory – Tracks what songs users have played
 
-💡 Skills Demonstrated
-- SQL (MySQL syntax)
-- Schema design and relationships
-- Aggregation, grouping, filtering
-- Use of `JOIN`, `LEFT JOIN`, `HAVING`, `GROUP BY`, `ORDER BY`
-- CTEs and nested logic
-- Data formatting (`FLOOR`, `MOD`, `CONCAT`)
-- Realistic dataset creation (100+ records)
+Relationships are set using foreign keys to reflect real-world connections between data.
 
----
+📊 Sample Queries Included
 
-🧠 About Me
+This project includes a wide range of SQL queries that demonstrate both basic and advanced skills:
 
-I'm Israel Adeleye (aka Izzy or Realspinn), a student with a passion for SQL and database systems. Though I’m not studying a tech-related course, I’m committed to mastering SQL and becoming a **Database Administrator (DBA)**. This project is a step toward that goal.
+🧮 Aggregate queries (e.g. most played songs, total listening time)
 
----
+🔍 Filtering by genre, date, and user
 
-📂 How to Use
+🔁 Joins across multiple tables
 
-1. Open **MySQL Workbench** (or any SQL client).
-2. Import the SQL file: `Spotify_clone.sql` (included in this repository).
-3. Run the included SQL queries to explore your data and test your logic.
-4. Tweak and add more queries to test deeper analysis.
+🔗 Subqueries (nested queries)
+
+🧠 Common Table Expressions (CTEs)
+
+📈 Playlist engagement tracking
+
+📊 Genre popularity analysis
+
+🛠️ Tech Stack
+
+Database Engine: MySQL
+
+Tools Used: MySQL Workbench
+
+Language: SQL (DDL + DML + advanced queries)
+
+🧠 What I Learned
+
+How to structure a relational database from scratch
+
+Writing professional, realistic SQL queries
+
+Working with joins, CTEs, and nested queries
+
+Organizing and documenting a SQL project for GitHub
+
+The foundations of what’s expected in a DBA role
+
+🚀 How to Run This Project
+
+Clone this repository or download the .sql file
+
+Open MySQL Workbench or any SQL client
+
+Import and run the SQL script to create the database
+
+Explore the queries and modify them as needed!
+
+📁 Files in This Repo
+
+spotify_clone.sql
+
+🙌 Credits
+
+Built with 💻, 🎧, and a whole lot of Google.This project is 100% self-built as part of my goal to become a skilled Database Administrator (DBA).I’m currently focused on mastering MySQL and PostgreSQL before moving into full DBA responsibilities.
+
+📬 Want to connect? Let’s build together!
+
