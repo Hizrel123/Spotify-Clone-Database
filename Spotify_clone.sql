@@ -782,7 +782,6 @@ SELECT
 FROM playlists p
 JOIN playlistsongs ps
 	ON p.id = ps.playlist_id
-WHERE YEAR(p.created_at) = 2023
 GROUP BY p.id, p.title
 ;
 
